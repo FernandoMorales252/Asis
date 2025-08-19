@@ -90,14 +90,15 @@
                 <div class="collapse" id="dashboard">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="../demo1/index.html">
-                        <span class="sub-item">Dashboard 1</span>
+                      <a th:href="@{/}">
+                        <span class="sub-item">Home</span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </li>
-             
+
+              <!--acceso a las opciones--> 
               <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#base">
                   <i class="fas fa-layer-group"></i>
@@ -107,17 +108,17 @@
                 <div class="collapse" id="base">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="components/avatars.html">
-                        <span class="sub-item">Usuarios</span>
+                      <a th:href="@{/asignaciones}">
+                        <span class="sub-item">Asignaciones</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/buttons.html">
+                      <a th:href="@{/grupos}">
                         <span class="sub-item">Grupos</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/gridsystem.html">
+                      <a th:href="@{/docentes}">
                         <span class="sub-item">Docentes</span>
                       </a>
                     </li>

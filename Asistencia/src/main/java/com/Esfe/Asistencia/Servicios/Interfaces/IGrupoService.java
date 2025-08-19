@@ -9,7 +9,7 @@ import com.Esfe.Asistencia.Modelos.Grupo;
 public interface IGrupoService {
     Page<Grupo> buscarTodos(Pageable pageable);
 
-    List<Grupo> ObtenerTodos();
+    List<Grupo> obtenerTodos();
 
     Optional<Grupo> buscarPorId(Integer id);
 

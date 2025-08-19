@@ -23,7 +23,7 @@ public class GrupoService implements IGrupoService {
     }
 
     @Override
-    public List<Grupo> ObtenerTodos() {
+    public List<Grupo> obtenerTodos() {
         return grupoRepository.findAll();
     }
 

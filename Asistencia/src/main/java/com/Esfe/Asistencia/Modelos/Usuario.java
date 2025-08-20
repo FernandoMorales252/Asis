@@ -22,6 +22,15 @@ private int Status;
         joinColumns = @JoinColumn(name = "usuario_id"),
         inverseJoinColumns = @JoinColumn(name = "rol_id"))
 private List<Rol> Roles;
+
+//metodo para agregar un rol al usuario
+public void agregar(Rol tempRol) {
+    if (Roles == null) {
+        Roles = new LinkedList<>();
+    }
+    Roles.add(tempRol);
+}
+
 public Integer getId() {
     return Id;
 }
@@ -51,7 +60,7 @@ public List<Rol> getRoles() {
 }
 public void setRoles(List<Rol> roles) {
     Roles = roles;
+
+
 }
-
-
 }
